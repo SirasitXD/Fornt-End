@@ -10,7 +10,7 @@ const base_url = "http://node56967-env-0063028.proen.app.ruk-com.cloud";
 app.set("view engine", "ejs");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(__dirname + "/public/views"));
+app.use(express.static(__dirname, "/public/views"));
 
 app.get("/", async (req, res) => {
     try {
